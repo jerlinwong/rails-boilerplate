@@ -33,7 +33,8 @@ group :development do
 end
 
 group :test do
+  # Database cleaner
+  gem "database_cleaner-active_record", "~> 2.1"
   # for rspec matachers
   gem 'shoulda-matchers', '~> 5.0'
 end
-
