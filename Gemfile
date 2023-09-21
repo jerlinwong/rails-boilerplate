@@ -28,6 +28,11 @@ group :development, :test do
 end
 
 group :development do
+  # For linting
+  gem "rubocop", "~> 1.56"
+  gem "rubocop-performance", "~> 1.19"
+  gem "rubocop-rails", "~> 2.21"
+  gem "rubocop-rspec", "~> 2.24"
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 end
@@ -38,3 +43,7 @@ group :test do
   # for rspec matachers
   gem 'shoulda-matchers', '~> 5.0'
 end
+
+
+
+
