@@ -39,6 +39,15 @@
 /public/packs
 /public/packs-test
 /node_modules
+
+# Ignore yarn files.
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
