@@ -50,3 +50,5 @@ group :test do
 end
 
 
+
+gem "shakapacker", "= 7.0"
