@@ -8,6 +8,9 @@ ruby '3.2.1'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.8'
 
+# Postgres database gem
+gem "pg", "~> 1.5"
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
 
@@ -45,3 +48,5 @@ group :test do
   # for rspec matachers
   gem 'shoulda-matchers', '~> 5.0'
 end
+
+

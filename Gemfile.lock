@@ -131,6 +131,7 @@ GEM
     parser (3.2.2.3)
       ast (~> 2.4.1)
       racc
+    pg (1.5.4)
     psych (5.1.0)
       stringio
     puma (5.6.7)
@@ -249,6 +250,7 @@ DEPENDENCIES
   debug
   factory_bot_rails (~> 6.2)
   jbuilder
+  pg (~> 1.5)
   puma (~> 5.0)
   rails (~> 7.0.8)
   rspec-rails (~> 6.0)
