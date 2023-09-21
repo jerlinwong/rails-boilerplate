@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  app-db:
+    image: postgres:15.2-alpine
+    container_name: rails-app-db
+    restart: always
+    ports:
+      - "5430:5432"
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: secret
+    volumes:
+      - app-db:/var/lib/postgresql/data
+
+volumes:
+  app-db:
