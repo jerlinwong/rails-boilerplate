@@ -72,6 +72,10 @@ module.exports = {
     // Disable this rule as we have typescript.
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prop-types.md
     'react/prop-types': 'off',
+
+    // Disable this rules as we are using new JSX transform
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
   },
   overrides: [
     {
