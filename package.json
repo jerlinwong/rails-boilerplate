@@ -15,6 +15,7 @@
     "defaults"
   ],
   "scripts": {
+    "lint": "concurrently \"yarn lint:js\" \"yarn lint:rb\"",
     "lint:js": "tsc && eslint . --ext .js,.jsx,.ts,.tsx,.json --max-warnings=0 --fix",
     "lint:rb": "bundle exec rubocop -a"
   },
@@ -32,6 +33,7 @@
     "@typescript-eslint/parser": "^6.7.2",
     "babel-loader": "^9.1.3",
     "compression-webpack-plugin": "^10.0.0",
+    "concurrently": "^8.2.1",
     "eslint": "^8.49.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-import-resolver-typescript": "^3.6.0",
