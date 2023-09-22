@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -19,11 +15,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": "app/javascript",
-    "paths": {}
+    "baseUrl": "app/javascript"
   },
-  "include": [
-    "app/javascript/**.ts",
-    "app/javascript/**.tsx"
-  ]
+  "include": ["app/javascript/**/*.ts", "app/javascript/**/*.tsx"]
 }
