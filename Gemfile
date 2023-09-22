@@ -9,7 +9,7 @@ ruby '3.2.1'
 gem 'rails', '~> 7.0.8'
 
 # Postgres database gem
-gem "pg", "~> 1.5"
+gem 'pg', '~> 1.5'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
@@ -49,6 +49,4 @@ group :test do
   gem 'shoulda-matchers', '~> 5.0'
 end
 
-
-
-gem "shakapacker", "= 7.0"
+gem 'shakapacker', '= 7.0'
