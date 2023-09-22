@@ -17,7 +17,8 @@
   "scripts": {
     "lint": "concurrently \"yarn lint:js\" \"yarn lint:rb\"",
     "lint:js": "tsc && eslint . --ext .js,.jsx,.ts,.tsx,.json --max-warnings=0 --fix",
-    "lint:rb": "bundle exec rubocop -a"
+    "lint:rb": "bundle exec rubocop -a",
+    "postinstall": "husky install"
   },
   "devDependencies": {
     "@babel/core": "^7.22.20",
@@ -45,6 +46,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-webpack-plugin": "^4.0.1",
     "fork-ts-checker-webpack-plugin": "^8.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
     "shakapacker": "7.0.0",
     "terser-webpack-plugin": "^5.3.9",
