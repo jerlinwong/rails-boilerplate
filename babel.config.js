@@ -11,6 +11,7 @@ module.exports = function (api) {
         {
           development: isEnvDevelopment || isEnvTest,
           useBuiltIns: true,
+          runtime: 'automatic',
         },
       ],
     ].filter(Boolean),
