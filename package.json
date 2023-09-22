@@ -16,6 +16,9 @@
     "defaults"
   ],
   "scripts": {
+    "dev": "concurrently \"yarn dev:rails\" \"yarn dev:react\"",
+    "dev:rails": "bundle exec rails s -p 3001",
+    "dev:react": "./bin/shakapacker-dev-server",
     "lint": "concurrently \"yarn lint:js\" \"yarn lint:rb\"",
     "lint:js": "tsc && eslint . --ext .js,.jsx,.ts,.tsx,.json --max-warnings=0 --fix",
     "lint:rb": "bundle exec rubocop -a",
