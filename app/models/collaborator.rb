@@ -2,5 +2,5 @@
 
 class Collaborator < ApplicationRecord
   belongs_to :artist
-  has_many :song, dependent: :destroy
+  has_many :track, dependent: :destroy
 end
